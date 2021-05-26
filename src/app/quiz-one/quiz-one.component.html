@@ -1,0 +1,19 @@
+<!-- <p>quiz-one works!</p> -->
+<div class="quiz-one content">
+    <h1>Quiz 1</h1>
+    <div class="table">
+        <div class="first td">
+            <input type="number" (input)="onSearchChange($event)">
+        </div>
+        <div class="second td">
+            <select class="form-control timeRage" (change)="onOptionChange($event)">
+                <option *ngFor="let opt of options" [value]='opt'>
+                  {{opt}}
+                </option>
+            </select>
+        </div>
+        <div class="third td">
+            <span *ngIf="result !== null">{{result}}</span>
+        </div>
+    </div>
+</div>

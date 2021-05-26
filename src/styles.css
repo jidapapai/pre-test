@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+  padding: 0 20px;
+}
+.content {
+    margin: 0px auto;
+    padding: 0 20px;
+    max-width: 1300;
+    height: calc(100% - 98px);    
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  border-bottom-width: 2px;
+}

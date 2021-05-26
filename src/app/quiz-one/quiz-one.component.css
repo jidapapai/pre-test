@@ -1,0 +1,31 @@
+.quiz-one {
+    overflow: auto;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+.table {
+    display: table;
+    height: calc(100% - 47px);
+    width: 100%;
+    min-width: 600px;
+}
+
+.table .td {
+    display: table-cell;
+    border: 1px solid #ddd;
+}
+
+.table .first {
+    width: 200px;
+}
+
+.table .second {
+    min-width: 100px;
+}
+
+.table .third {
+    width: 300px;
+}

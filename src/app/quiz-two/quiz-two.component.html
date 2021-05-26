@@ -1,0 +1,27 @@
+<div class="quiz-two content">
+    <h1>Quiz 2</h1>
+    <div class="filter">
+        <label>Keyword</label>
+        <input type="text" (input)="onSearchChange($event)">
+    </div>
+    <span *ngIf="isLoading">Fetching data...</span>
+    <table *ngIf="!isLoading" class="table">
+      <thead>
+        <tr>
+          <th class="chart-table-title">Categories</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="filterList?.length">
+        <tr *ngFor="let value of filterList; index as i;">
+          <td class="chart-table-title">
+            <span>{{value}}</span>
+        </tr>
+      </tbody>
+      <tbody *ngIf="!filterList?.length">
+        <tr>
+          <td class="chart-table-title">
+            <span>No data</span>
+        </tr>
+      </tbody>
+    </table>
+</div>

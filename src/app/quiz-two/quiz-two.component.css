@@ -1,0 +1,15 @@
+h1 {
+    margin: 0 0 10px 0;
+}
+
+.table {
+    width: 200px;
+}
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    padding-bottom: 5px;
+    display: block;
+}
